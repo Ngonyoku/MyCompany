@@ -1,17 +1,39 @@
 package sample;
 
 import javafx.application.Platform;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.scene.control.Label;
-import javafx.scene.control.Button;
-import javafx.scene.Scene;
+import javafx.stage.StageStyle;
 
-public class AlertDialog {
+import java.io.IOException;
 
-    public static void show(Stage stage, String title, String message) {
+public class ScreenManager {
+
+    public void startController(Stage window, String destination) throws IOException {
+        Stage stage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource(destination));
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.setScene(new Scene(root, 600, 400));
+        stage.show();
+        window.close();
+    }
+
+    public void startController(String destination) throws IOException {
+        Stage stage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource(destination));
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.setScene(new Scene(root, 600, 400));
+        stage.show();
+    }
+
+    public void exitWindow(Stage stage, String title, String message) {
         Stage dialogBox = new Stage();
         Label label = new Label();
 
@@ -25,7 +47,6 @@ public class AlertDialog {
                 event -> {
                     dialogBox.close();
                     stage.close();
-                    Platform.exit();
                 }
         );
 

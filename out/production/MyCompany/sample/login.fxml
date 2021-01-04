@@ -19,24 +19,24 @@
     <center>
         <AnchorPane fx:id="passwordLogin" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
             <children>
-                <Label layoutX="22.0" layoutY="168.0" prefHeight="20.0" prefWidth="341.0" text="Username" textFill="#6200ee">
+                <Label layoutX="22.0" layoutY="168.0" prefHeight="20.0" prefWidth="369.0" text="Username" textFill="#6200ee">
                     <font>
                         <Font size="14.0" />
                     </font>
                 </Label>
-                <TextField fx:id="usernameTF" layoutX="22.0" layoutY="195.0" prefHeight="25.0" prefWidth="341.0" promptText="Enter your Username" />
+                <TextField fx:id="usernameTF" layoutX="22.0" layoutY="195.0" prefHeight="25.0" prefWidth="369.0" promptText="Enter your Username" />
                 <Label layoutX="22.0" layoutY="228.0" prefHeight="20.0" prefWidth="341.0" text="Password" textFill="#6200ee">
                     <font>
                         <Font size="14.0" />
                     </font>
                 </Label>
-                <PasswordField fx:id="passwordTF" layoutX="22.0" layoutY="254.0" prefHeight="25.0" prefWidth="341.0" promptText="Enter Your Password" />
-                <Button fx:id="loginBtn" layoutX="22.0" layoutY="298.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="25.0" prefWidth="341.0" style="-fx-background-color: #6200EE;" text="LOG IN" textFill="WHITE" />
-                <Button fx:id="registerBtn" layoutX="22.0" layoutY="336.0" mnemonicParsing="false" onAction="#openRegister" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: #6200EE;" text="REGISTER" textFill="WHITE" />
-                <Button fx:id="cancelBtn" layoutX="208.0" layoutY="336.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #FF0000;" text="CANCEL" textFill="WHITE" />
+                <PasswordField fx:id="passwordTF" layoutX="22.0" layoutY="254.0" prefHeight="25.0" prefWidth="369.0" promptText="Enter Your Password" />
+                <Button fx:id="loginBtn" layoutX="22.0" layoutY="298.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="25.0" prefWidth="369.0" style="-fx-background-color: #6200EE;" text="LOG IN" textFill="WHITE" />
+                <Button fx:id="registerBtn" layoutX="22.0" layoutY="336.0" mnemonicParsing="false" onAction="#openRegister" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: #6200EE;" text="REGISTER" textFill="WHITE" />
+                <Button fx:id="cancelBtn" layoutX="208.0" layoutY="336.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: #FF0000;" text="CANCEL" textFill="WHITE" />
                 <Label fx:id="feedbackLabel" alignment="CENTER" layoutX="22.0" layoutY="143.0" prefHeight="17.0" prefWidth="341.0" textFill="RED">
                     <font>
-                        <Font size="14.0" />
+                        <Font size="16.0" />
                     </font>
                 </Label>
             </children>
