@@ -32,7 +32,7 @@ public class LoginController {
     public Label feedbackLabel;
 
     /*Exits the Window and the entire application*/
-    public void cancel() {
+    public void cancel() {  
         Stage stage = (Stage) cancelBtn.getScene().getWindow();
         stage.close();
         Platform.exit();
@@ -41,7 +41,7 @@ public class LoginController {
     public void loginUser() {
         if (!usernameTF.getText().isEmpty() && !passwordTF.getText().isEmpty()) {
             validateLogin(usernameTF.getText(), passwordTF.getText());
-        } else {
+        } else {    
             feedbackLabel.setText("Please Fill in all the Blanks");
         }
     }
